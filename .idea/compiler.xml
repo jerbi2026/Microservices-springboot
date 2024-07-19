@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="APIGateway" />
+        <module name="ConfigServer" />
+        <module name="Stock" />
+        <module name="Article" />
+        <module name="Discovery-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APIGateway" target="17" />
+      <module name="Article" target="17" />
+      <module name="ConfigServer" target="17" />
+      <module name="Discovery-server" target="17" />
+      <module name="Stock" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGateway" options="-parameters" />
+      <module name="Article" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
+      <module name="Discovery-server" options="-parameters" />
+      <module name="Stock" options="-parameters" />
+    </option>
+  </component>
+</project>
