@@ -1,0 +1,8 @@
+com\example\stock\RestCOntrollers\StockRestController.class
+com\example\stock\DTO\StockDTO.class
+com\example\stock\Entities\Stock.class
+com\example\stock\Repositories\StockRepo.class
+com\example\stock\StockApplication.class
+com\example\stock\Services\StockService.class
+com\example\stock\Entities\Stock$StockBuilder.class
+com\example\stock\Services\IServiceStock.class

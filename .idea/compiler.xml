@@ -14,21 +14,14 @@
         <module name="Discovery-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="APIGateway" target="17" />
-      <module name="Article" target="17" />
-      <module name="ConfigServer" target="17" />
-      <module name="Discovery-server" target="17" />
-      <module name="Stock" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="APIGateway" options="-parameters" />
       <module name="Article" options="-parameters" />
       <module name="ConfigServer" options="-parameters" />
-      <module name="Discovery-server" options="-parameters" />
-      <module name="Stock" options="-parameters" />
+      <module name="Discovery-server" options="" />
+      <module name="Stock" options="" />
     </option>
   </component>
 </project>
