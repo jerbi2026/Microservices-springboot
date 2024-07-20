@@ -1,0 +1,39 @@
+server:
+  port: 8875
+
+spring:
+  application:
+    name: APIGateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: Produit-MS
+          uri: lb://Produit
+          predicates:
+            - Path=/api/produit/**
+          filters:
+            - StripPrefix=1
+        - id: Stock-MS
+          uri: lb://Stock
+          predicates:
+            - Path=/api/stock/**
+          filters:
+            - StripPrefix=1
+    config:
+      uri: http://localhost:8888
+      import-check:
+        enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+
+

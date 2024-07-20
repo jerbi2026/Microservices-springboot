@@ -9,13 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @RestController
 @RequestMapping("api/stock")
 @RequiredArgsConstructor
 public class StockRestController {
-
-
     final StockService service;
 
     @GetMapping("/getallstocks")
